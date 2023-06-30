@@ -38,16 +38,16 @@ class CharactersResult {
   final int id;
   final String name;
   final String description;
-  final CharacterThumbnail thumbnail;
+  final CharactersThumbnail thumbnail;
   final String resourceURI;
 }
 
 @JsonSerializable(createToJson: false)
-class CharacterThumbnail {
-  CharacterThumbnail({required this.path, required this.extension});
+class CharactersThumbnail {
+  CharactersThumbnail({required this.path, required this.extension});
 
-  factory CharacterThumbnail.fromJson(Map<String, dynamic> json) =>
-      _$CharacterThumbnailFromJson(json);
+  factory CharactersThumbnail.fromJson(Map<String, dynamic> json) =>
+      _$CharactersThumbnailFromJson(json);
 
   final String path;
   final String extension;
